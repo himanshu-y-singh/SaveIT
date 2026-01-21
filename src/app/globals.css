@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Sage & Earthy Theme */
+    --background: 60 30% 98%; /* Off-white with warm tint */
+    --foreground: 30 20% 15%; /* Deep brown-gray */
+
+    --card: 0 0% 100%; /* Pure white */
+    --card-foreground: 30 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 20% 15%;
+
+    --primary: 76 31% 58%; /* Sage green (#ADC178) - Primary accent */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 75 50% 82%; /* Light sage (#DDE5B6) - Secondary accent */
+    --secondary-foreground: 30 20% 15%;
+
+    --muted: 60 30% 97%; /* Very light warm white */
+    --muted-foreground: 30 10% 40%; /* Muted brown */
+
+    /* Consolidated and unique accent, destructive, border, input, ring */
+    --accent: 350 30% 34%; /* Wine */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%; /* Saturated red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 63 15% 85%; /* Light sage border */
+    --input: 63 15% 85%; /* Matching input border */
+    --ring: 8 70% 62%; /* Bittersweet for focus */
+
+    --radius: 0.75rem; /* Slightly rounded corners */
+
+    /* Chart colors - earth tones */
+    --chart-1: 63 28% 72%;   /* Sage */
+    --chart-2: 39 100% 83%;  /* Peach yellow */
+    --chart-3: 8 70% 62%;    /* Bittersweet */
+    --chart-4: 350 30% 34%;  /* Wine */
+    --chart-5: 353 22% 23%;  /* Van Dyke */
+
+    /* Sidebar - clean and natural */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 30 20% 15%;
+    --sidebar-primary: 8 70% 62%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 350 30% 34%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 63 15% 85%;
+    --sidebar-ring: 8 70% 62%;
+  }
+
+  .dark {
+    /* Dark Earthy Theme */
+    --background: 30 15% 10%; /* Deep warm gray */
+    --foreground: 39 40% 95%; /* Off-white */
+
+    --card: 30 15% 12%; /* Slightly lighter warm gray */
+    --card-foreground: 39 40% 95%;
+
+    --popover: 30 15% 15%;
+    --popover-foreground: 39 40% 95%;
+
+    --primary: 76 31% 58%; /* Sage green (#ADC178) */
+    --primary-foreground: 30 15% 10%;
+
+    --secondary: 39 70% 60%; /* Warm peach */
+    --secondary-foreground: 30 15% 10%;
+
+    --muted: 30 10% 20%; /* Dark muted brown */
+    --muted-foreground: 39 20% 70%; /* Muted peach */
+
+    --accent: 75 50% 40%; /* Muted sage */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 45%; /* Darker red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 25%; /* Subtle dark border */
+    --input: 30 10% 25%;
+    --ring: 76 31% 58%; /* Sage green for focus */
+
+    /* Chart colors */
+    --chart-1: 76 31% 58%;   /* Sage green */
+    --chart-2: 75 50% 40%;   /* Muted sage */
+    --chart-3: 39 70% 60%;   /* Warm peach */
+    --chart-4: 30 50% 50%;   /* Warm brown */
+    --chart-5: 30 20% 30%;   /* Dark brown */
+
+    /* Sidebar */
+    --sidebar-background: 30 15% 10%;
+    --sidebar-foreground: 39 40% 95%;
+    --sidebar-primary: 76 31% 58%;
+    --sidebar-primary-foreground: 30 15% 10%;
+    --sidebar-accent: 39 70% 60%;
+    --sidebar-accent-foreground: 30 15% 10%;
+    --sidebar-border: 30 10% 25%;
+    --sidebar-ring: 76 31% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Modern food-inspired glow effects */
+.neon-primary-text {
+  color: hsl(var(--primary));
+  text-shadow:
+    0 0 6px hsl(var(--primary) / 0.8),
+    0 0 12px hsl(var(--primary) / 0.6),
+    0 0 18px hsl(var(--primary) / 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.neon-primary-text:hover {
+  text-shadow:
+    0 0 8px hsl(var(--primary) / 0.9),
+    0 0 16px hsl(var(--primary) / 0.7),
+    0 0 24px hsl(var(--primary) / 0.4);
+  transform: translateY(-1px);
+}
+
+.neon-accent-text {
+  color: hsl(var(--accent));
+  text-shadow:
+    0 0 6px hsl(var(--accent) / 0.7),
+    0 0 12px hsl(var(--accent) / 0.4),
+    0 0 18px hsl(var(--accent) / 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-accent-text:hover {
+  text-shadow:
+    0 0 8px hsl(var(--accent) / 0.9),
+    0 0 16px hsl(var(--accent) / 0.6),
+    0 0 24px hsl(var(--accent) / 0.3);
+  transform: translateY(-1px);
+}
+
+/* Subtle glow for buttons and interactive elements */
+.glow-on-hover {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-on-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 15px hsl(var(--primary) / 0);
+  transition: box-shadow 0.3s ease;
+  pointer-events: none;
+}
+
+.glow-on-hover:hover::before {
+  box-shadow: 0 0 15px hsl(var(--primary) / 0.4);
+}
+
+/* Typing indicator animation */
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: hsl(var(--primary));
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation: bounce 1.2s infinite 0.1s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation: bounce 1.2s infinite 0.3s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation: bounce 1.2s infinite 0.5s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
