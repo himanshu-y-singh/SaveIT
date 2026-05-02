@@ -1,14 +1,31 @@
 
 # SaveIT.io
 
-[🔍 Search Assistant](/search) | [🛒 Compare Prices](/compare) | [💰 Start Comparing Now](/compare)
+[🔍 Search Assistant] | [🛒 Compare Prices] | [💰 Start Comparing Now]
 
-## Quick Links
+## Features
 
-- [🔍 Search for Products](/search)
-- [🛒 Compare Prices Across Platforms](/compare)
-- [📊 View Price History](/compare)
-- [🛍️ Make Smart Shopping Decisions](/compare)
+- [🔍 Search for Products]
+- [🛒 Compare Prices Across Platforms]
+- [📊 View Price History]
+- [🛍️ Make Smart Shopping Decisions]
+
+### 🛒 Cross-Platform Comparison Screen
+
+![compare page](/compare.png)
+
+### 👩‍🍳 AI Recipe & Shopping Assistant
+
+Simply tell SaveIT what dish you want to make, and our AI will handle the rest! The seamless flow includes:
+1. **Recipe Generation:** Provides a step-by-step recipe for your desired dish.
+2. **Smart Ingredient Extraction:** Automatically creates a precise list of ingredients you'll need.
+3. **Cross-Platform Search:** Checks multiple quick-commerce platforms for the availability and prices of these ingredients.
+4. **Best Platform Suggestion:** Recommends the platform with the most optimal total cart value.
+5. **One-Click Add to Cart:** Instantly add all required items to your cart on the chosen platform.
+
+![shopping assistant](/shoping_assistant.png)
+![dish recipe](/dish_recipe.png)
+![ingredients_list](/ingredients_list.png)
 
 ## Description
 
@@ -33,7 +50,7 @@ SaveIT.io empowers users to buy smarter, not more—making quick commerce truly 
 - **Multi-Platform Product Search**: Uses an external API to search for products across multiple platforms (Swiggy, Zepto, Blinkit, Jiomart, DMart, BigBasket, etc.).
 - **Comprehensive Cost Comparison**: Compares prices, and estimates platform fees, delivery charges, and minimum order values using aggregated data. AI assists in reasoning about product equivalency.
 - **Cart Comparison**: Allows users to add products to a virtual cart and compare the total estimated cost across different platforms, including fees and charges.
-- **Smart Savings Suggestions**: Provides personalized savings suggestions based on user preferences and current deals using Genkit AI to tailor recommendations, considering factors like MOV manipulation and fee optimization.
+- **Smart Savings Suggestions**: Provides personalized savings suggestions based on user preferences and current deals using Genkit AI to tailor recommendations, considering factors like MOV( minimum order value ) manipulation and fee optimization.
 - **Interactive Display of Results**: Displays search results, cost savings, and suggests alternatives for better price options.
 
 ## Technologies Used

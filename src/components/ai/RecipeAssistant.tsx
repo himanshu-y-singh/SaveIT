@@ -768,6 +768,7 @@ export function RecipeAssistant() {
                                 fill
                                 className="object-contain p-1.5"
                                 sizes="64px"
+                                unoptimized={true}
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
                                   const placeholderImage = `https://placehold.co/100x100.png`;

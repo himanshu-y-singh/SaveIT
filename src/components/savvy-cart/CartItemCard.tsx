@@ -31,6 +31,7 @@ const CartItemCard: React.FC<CartItemCardProps> = ({ item, onUpdateQuantity, onR
             fill
             className="object-contain p-1.5"
             sizes="80px"
+            unoptimized={true}
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               if (target.src !== placeholderImage) {

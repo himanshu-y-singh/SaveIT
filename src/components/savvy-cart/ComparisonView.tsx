@@ -170,6 +170,7 @@ const ComparisonView: React.FC<ComparisonViewProps> = ({ comparisonResults, onCl
                           height={60}
                           className="rounded-md object-contain border bg-white"
                           data-ai-hint="original product"
+                          unoptimized={true}
                         />
                         <div className="flex-grow">
                           <h4 className="font-semibold text-base md:text-lg text-foreground">{compItem.originalItem.name} ({compItem.originalItem.cartQuantity}x)</h4>
@@ -221,6 +222,7 @@ const ComparisonView: React.FC<ComparisonViewProps> = ({ comparisonResults, onCl
                                     height={28}
                                     className="rounded-full border bg-white p-0.5"
                                     data-ai-hint={`${alt.platform.name} icon`}
+                                    unoptimized={true}
                                   />
                                   <div>
                                     <span className="text-sm md:text-base font-medium text-foreground">

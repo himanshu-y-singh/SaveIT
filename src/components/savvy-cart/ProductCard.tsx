@@ -26,6 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
             style={{ objectFit: 'contain' }}
             className="rounded-md"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            unoptimized={true}
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               if (target.src !== placeholderImage) {
