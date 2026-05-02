@@ -12,7 +12,7 @@
 
 ### 🛒 Cross-Platform Comparison Screen
 
-![compare page](/compare.png)
+![compare page](public/compare.png)
 
 ### 👩‍🍳 AI Recipe & Shopping Assistant
 
@@ -23,9 +23,9 @@ Simply tell SaveIT what dish you want to make, and our AI will handle the rest! 
 4. **Best Platform Suggestion:** Recommends the platform with the most optimal total cart value.
 5. **One-Click Add to Cart:** Instantly add all required items to your cart on the chosen platform.
 
-![shopping assistant](/shoping_assistant.png)
-![dish recipe](/dish_recipe.png)
-![ingredients_list](/ingredients_list.png)
+![shopping assistant](public/shoping_assistant.png)
+![dish recipe](public/dish_recipe.png)
+![ingredients_list](public/ingredients_list.png)
 
 ## Description
 
